@@ -80,19 +80,19 @@ def mostras_pac(pac):
         b=str(input("generar reporte [SI/NO] ")) 
         b=b.lower()
         if b=="si":
-            rep=repo(paciente_analizar.get_nombre(),paciente_analizar.get_edad(),paciente_analizar.get_periodos(),paciente_analizar.get_m(),"leve")
-            #rep.crear_xml()
-            print("reporte generado")    
-            linked_list.imprimir_listaD()
-
-
-            
-
-
     
-
-
-
+            c=linked_list.comparar_matrices(tamaño)
+            if str(c)=="bandera":
+                rep=repo(paciente_analizar.get_nombre(),paciente_analizar.get_edad(),paciente_analizar.get_periodos(),paciente_analizar.get_m(),"Grave",None)
+                rep.crear_xml_grave()
+                print("reporte generado revise su carpeta.....")
+            elif c>0:
+                rep=repo(paciente_analizar.get_nombre(),paciente_analizar.get_edad(),paciente_analizar.get_periodos(),paciente_analizar.get_m(),"Mortal",c)
+                rep.crear_xml_mortal()
+                print("reporte generado revise su carpeta.....")
+            else:
+                pass    
+                 
 
 
 
