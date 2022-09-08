@@ -23,7 +23,7 @@
             <nombre>$nombre2</nombre>
             <edad>$edad2</edad>
             </datospersonales>
-    <periodos>2</periodos>
+    <periodos></periodos>
     <m>20</m>
     <rejilla>
         <celda f="2" c="2" />

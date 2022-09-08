@@ -1,3 +1,7 @@
+from Lista_Simple import lista_simple
+from matriz import Matriz
+
+
 class Nodo:
     def __init__(self, elemento):
         self.elemento = elemento
@@ -8,6 +12,39 @@ class doubleList:
     def __init__(self):
         self.root = None
     
+
+
+    def comparar_matrices(self,tamaño):
+        apunta=self.root
+        m_inicial=apunta.elemento
+
+        a=""#patron de la primera matriz
+        n=0#patron donde cambia
+
+        for i in range(tamaño):
+            for j in range(tamaño):
+                a+=str(m_inicial.obtener_celda(i,j).elemento)
+       
+    
+
+        while apunta.siguiente is not None:
+            n+=1
+            m_comparar=apunta.siguiente.elemento
+            b=""#patron de la matriz a comp
+            for i in range(tamaño):
+                for j in range(tamaño):
+                    b+=str(m_comparar.obtener_celda(i,j).elemento)
+            apunta=apunta.siguiente        
+            
+            if a != b:#no coincide el patron
+                return n
+            else:
+                return "bandera" #todas son iguales   
+
+            
+            
+
+        
     def insertar_final(self, dato):
 
         if self.root is None:
