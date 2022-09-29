@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pacientes>
+  <paciente>
+        <datospersonales>
+            <nombre>Ruben Doblas</nombre>
+            <edad>33</edad>
+        </datospersonales>
+        <periodos>15</periodos>
+        <m>10</m>
+        <resultado>Mortal</resultado>
+            <n1>1<n1/>
+    </paciente>

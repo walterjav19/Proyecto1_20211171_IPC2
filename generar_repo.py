@@ -34,7 +34,7 @@ class repo:
         <periodos>'''+str(self.periodo)+'''</periodos>
         <m>'''+str(self.m)+'''</m>
         <resultado>'''+self.resultado+'''</resultado>
-            <n1>'''+self.n1+'''<n1/>
+            <n1>'''+str(self.n1)+'''<n1/>
     </paciente>'''
 
         return cuerpo2
